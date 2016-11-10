@@ -1,40 +1,48 @@
-﻿*{
+﻿* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
+
 #pageContainer {
-    margin:0 auto;
-    max-width:1300px;
+    margin: 0 auto;
+    max-width: 1300px;
 }
+
 #pageContent {
     flex: 100%;
 }
+
 #pageHead,
 #pageFooter {
     display: flex;
     flex-direction: row;
-    
 }
+
 #pageNav {
     background-color: greenyellow;
     height: 50px;
 }
+
 #pageHead {
     background-color: white;
     height: 100px;
 }
+
 #pageFooter {
     min-height: 50px;
-    background-color:darkorange;
+    background-color: darkorange;
 }
+
 #pageMain {
     min-height: 1000px;
-    padding:15px;
+    padding: 15px;
 }
+
 #pageContent {
-    background-color:blueviolet;
+    background-color: blueviolet;
 }
 
 #pageNav ul {
@@ -42,61 +50,72 @@ body{
     flex-direction: row;
     list-style-type: none;
 }
+
 #pageNav li {
     padding: 0;
     margin: 0 30px;
     flex: 100%;
 }
 
-#navCategories{
-    float:left;
+#navCategories {
+    float: left;
 }
 
-#navPages{
-    float:right;
+#navPages {
+    float: right;
 }
+
 #pageHead .centered {
-    display:inline-block;
+    display: inline-block;
     margin: auto;
     max-height: 100px;
 }
-#pageHead .centered img {
-    max-height: 80px;
-    margin: 10px;
-    
-}
-#pageHead .centered h1{
-    margin: 35px 0;
-    float: right;
-    color: #0095DA;
-}
+
+    #pageHead .centered img {
+        max-height: 80px;
+        margin: 10px;
+    }
+
+    #pageHead .centered h1 {
+        margin: 35px 0;
+        float: right;
+        color: #0095DA;
+    }
+
 #myCarousel, #myCarousel img {
-    max-height:300px;
+    max-height: 300px;
 }
+
 #navCategories ul,
 #navPages ul {
     padding: 0;
 }
+
 #navCategories li,
 #navPages li {
-    padding:15px;
-    margin:0px;
+    padding: 15px;
+    margin: 0px;
     /*border:solid 1px black;*/
 }
-#navCategories li:hover,
-#navPages li:hover {
-    cursor: pointer;
-    background-color: lightgreen;
-}
+
+    #navCategories li:hover,
+    #navPages li:hover {
+        cursor: pointer;
+        background-color: lightgreen;
+    }
 
 .productImage {
     width: 90%;
     margin: 0 5%;
+    max-height: 170px;
+    min-height: 170px;
 }
+
 .price span {
     font-size: 3em;
     color: darkred;
 }
+
 .productInfo {
     font-size: 1.5em;
 }

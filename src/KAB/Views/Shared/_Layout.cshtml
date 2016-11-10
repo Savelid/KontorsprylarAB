@@ -10,12 +10,12 @@
 <body>
     <div id="pageContainer">
         <div id="pageHead">
-            <div>Menu</div><div class="centered"><img src="~/Images/Logo-min.png" /><h1>Kontorsprylar AB</h1></div>
+            <div>Menu</div><div class="centered"><a href="/"><img src="~/Images/Logo-min.png" /><h1>Kontorsprylar AB</h1></a></div>
         </div>
         <div id="pageNav">
             <div id="navCategories">
                 <ul>
-                    <a href="@Url.Action("Category", "Product")"><li>Pennor</li></a>
+                    <a href="@Url.Action("Category", "Product", new { Id = "Pennor" })"><li>Pennor</li></a>
                     <li>Sudd</li>
                     <li>Papper</li>
                     <li>Kuvert</li>

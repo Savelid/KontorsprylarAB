@@ -3,23 +3,29 @@
 <h2>@Model.CategoryName</h2>
 
 <ul class="nav nav-pills">
-    @foreach (var subcat in Model.SubCategories)
+    @if (Model.SubCategories != null)
     {
-        <li role="presentation" class="disabled"><a href="@Url.Action("Category", "Product", new { id = subcat.CategoryName })">@subcat.CategoryName</a></li>
+        @foreach (var subcat in Model.SubCategories)
+        {
+            <li role="presentation" class="disabled"><a href="@Url.Action("Category", "Product", new { id = subcat.CategoryName })">@subcat.CategoryName</a></li>
+        }
     }
 </ul>
 
 <div class="row">
-    @foreach (var product in Model.Products)
+    @if (Model.Products != null)
     {
-        <div class="col-sm-4 col-xs-6 col-md-3">
-            <h3>@product.Name</h3>
-            <img src="@product.ImageUrl" class="productImage" />
-            <div class="price"><small>Price: </small><span> @product.Price</span></div>
-            <div>
-                <button>Köp</button>
-                <button>Info</button>
+        @foreach (var product in Model.Products)
+        {
+            <div class="col-sm-4 col-xs-6 col-md-3">
+                <h3>@product.Name</h3>
+                <img src="@product.ImageUrl" class="productImage" />
+                <div class="price"><small>Price: </small><span> @product.Price</span></div>
+                <div>
+                    <a href="@Url.Action("Product", "Product", new { Id = product.Id })"><button>Köp</button></a>
+                    <a href="@Url.Action("Product", "Product", new { Id = product.Id })"><button>Info</button></a>
+</div>
             </div>
-        </div>
+        }
     }
 </div>
