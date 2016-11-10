@@ -73,9 +73,18 @@ body{
 #myCarousel, #myCarousel img {
     max-height:300px;
 }
-#navCategories li{
-    padding:5px;
-    margin:10px;
-    border:solid 1px black;
-
+#navCategories ul,
+#navPages ul {
+    padding: 0;
+}
+#navCategories li,
+#navPages li {
+    padding:15px;
+    margin:0px;
+    /*border:solid 1px black;*/
+}
+#navCategories li:hover,
+#navPages li:hover {
+    cursor: pointer;
+    background-color: lightgreen;
 }

@@ -15,5 +15,10 @@ namespace KAB.Controllers
         {
             return View();
         }
+
+        public IActionResult Pens()
+        {
+            return View();
+        }
     }
 }
