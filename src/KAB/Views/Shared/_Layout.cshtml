@@ -8,14 +8,24 @@
 </head>
 <body>
     <div id="pageContainer">
-        <div id="pageHead"></div>
+        <div id="pageHead">
+            <img src="~/Images/Logo.png" /><h1>Kontorsprylar AB</h1>
+        </div>
         <div id="pageNav">
-            <ul>
-                <li>Pennor</li>
-                <li>Sudd</li>
-                <li>Papper</li>
-                <li>Kuvert</li>
-            </ul>
+            <div id="navCategories">
+                <ul>
+                    <li>Pennor</li>
+                    <li>Sudd</li>
+                    <li>Papper</li>
+                    <li>Kuvert</li>
+                </ul>
+            </div>
+            <div id="navPages">
+                <ul>
+                    <li>Om</li>
+                    <li>HJÄLP</li>
+                </ul>
+            </div>
         </div>
         <div id="pageMain">
             @RenderBody()
