@@ -4,6 +4,10 @@
 body{
     margin: 0;
 }
+#pageContainer {
+    margin:0 auto;
+    max-width:1300px;
+}
 #pageContent {
     flex: 100%;
 }
@@ -13,6 +17,7 @@ body{
 #pageMain {
     display: flex;
     flex-direction: row;
+    
 }
 #pageNav {
     background-color: greenyellow;
@@ -27,7 +32,7 @@ body{
     background-color:darkorange;
 }
 #pageMain {
-    min-height: 300px;
+    min-height: 1000px;
 }
 #pageContent {
     background-color:blueviolet;
