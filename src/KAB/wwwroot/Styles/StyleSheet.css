@@ -88,3 +88,15 @@ body{
     cursor: pointer;
     background-color: lightgreen;
 }
+
+.productImage {
+    width: 90%;
+    margin: 0 5%;
+}
+.price span {
+    font-size: 3em;
+    color: darkred;
+}
+.productInfo {
+    font-size: 1.5em;
+}

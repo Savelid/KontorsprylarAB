@@ -8,18 +8,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace KAB.Controllers
 {
-    public class HomeController : Controller
+    public class ProductController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Category(string id)
         {
+
             return View();
         }
-        public IActionResult About()
-        {
-            return View();
-        }
-        public IActionResult Help()
+        public IActionResult Product()
         {
             return View();
         }
