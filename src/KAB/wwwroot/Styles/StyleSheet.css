@@ -7,23 +7,37 @@ body{
 #pageContent {
     flex: 100%;
 }
+html,
+body {
+    height: 100%;
+}
+#pageContainer {
+    height: 100%;
+    border: solid 3px blue;
+    display: flex;
+    flex-direction: column;
+}
 #pageHead,
 #pageNav,
 #pageFooter,
 #pageMain {
     display: flex;
     flex-direction: row;
+    flex: 100%
 }
 #pageNav {
     background-color: greenyellow;
-    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
 }
 #pageHead {
     background-color: brown;
-    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
 }
 #pageFooter {
     min-height: 50px;
+    max-height: 50px;
     background-color:darkorange;
 }
 #pageMain {
