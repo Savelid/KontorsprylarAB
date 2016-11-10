@@ -4,44 +4,34 @@
 body{
     margin: 0;
 }
+#pageContainer {
+    margin:0 auto;
+    max-width:1300px;
+}
 #pageContent {
     flex: 100%;
 }
-html,
-body {
-    height: 100%;
-}
-#pageContainer {
-    height: 100%;
-    border: solid 3px blue;
-    display: flex;
-    flex-direction: column;
-}
 #pageHead,
-#pageNav,
 #pageFooter,
 #pageMain {
     display: flex;
     flex-direction: row;
-    flex: 100%
+    
 }
 #pageNav {
     background-color: greenyellow;
-    max-height: 50px;
-    min-height: 50px;
+    height: 50px;
 }
 #pageHead {
-    background-color: brown;
-    max-height: 150px;
-    min-height: 150px;
+    background-color: white;
+    height: 100px;
 }
 #pageFooter {
     min-height: 50px;
-    max-height: 50px;
     background-color:darkorange;
 }
 #pageMain {
-    min-height: 300px;
+    min-height: 1000px;
 }
 #pageContent {
     background-color:blueviolet;
@@ -56,4 +46,12 @@ body {
     padding: 0;
     margin: 0 30px;
     flex: 100%;
+}
+
+#navCategories{
+    float:left;
+}
+
+#navPages{
+    float:right;
 }
