@@ -11,16 +11,26 @@ body{
 #pageContent {
     flex: 100%;
 }
+html,
+body {
+    height: 100%;
+}
+#pageContainer {
+    height: 100%;
+    border: solid 3px blue;
+    display: flex;
+    flex-direction: column;
+}
 #pageHead,
 #pageFooter,
 #pageMain {
     display: flex;
     flex-direction: row;
-    
 }
 #pageNav {
     background-color: greenyellow;
-    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
 }
 #pageHead {
     background-color: white;
@@ -28,6 +38,7 @@ body{
 }
 #pageFooter {
     min-height: 50px;
+    max-height: 50px;
     background-color:darkorange;
 }
 #pageMain {
