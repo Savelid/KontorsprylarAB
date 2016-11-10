@@ -55,18 +55,3 @@ body{
 #navPages{
     float:right;
 }
-#pageHead .centered {
-    display:inline-block;
-    margin: auto;
-    max-height: 100px;
-}
-#pageHead .centered img {
-    max-height: 80px;
-    margin: 10px;
-    
-}
-#pageHead .centered h1{
-    margin: 35px 0;
-    float: right;
-    color: #0095DA;
-}
