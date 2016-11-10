@@ -12,8 +12,7 @@ body{
     flex: 100%;
 }
 #pageHead,
-#pageFooter,
-#pageMain {
+#pageFooter {
     display: flex;
     flex-direction: row;
     
@@ -32,6 +31,7 @@ body{
 }
 #pageMain {
     min-height: 1000px;
+    padding:15px;
 }
 #pageContent {
     background-color:blueviolet;
@@ -69,4 +69,13 @@ body{
     margin: 35px 0;
     float: right;
     color: #0095DA;
+}
+#myCarousel, #myCarousel img {
+    max-height:300px;
+}
+#navCategories li{
+    padding:5px;
+    margin:10px;
+    border:solid 1px black;
+
 }
